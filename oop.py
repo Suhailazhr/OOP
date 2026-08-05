@@ -30,14 +30,14 @@ print(stu4.name , stu4.cgpa)
 
 
 '''
-
+'''
 class student:
     college_name = "A B C" #class attributes
     PI = 3.1
 
-    '''def __init__(self): #default construtor
+    def __init__(self): #default construtor
         print("Obj is being counstructor..")
-'''
+
 #constructor == has two ==> default and parameterized
 
     def __init__(self,name,cgpa): #parameterized constructor
@@ -63,6 +63,29 @@ print(stu1.PI) #high priority is that take the value from instance attribute sa
 
 print(student.PI) #but when we call the class attribute take the value from class attribute
 
+'''
+class laptop:
+    storage_type = "Ssd"
 
+    def __init__(self , RAM , Storage):
+        self.RAM = RAM
+        self.Storage = Storage
 
+    @classmethod
+    def get_storage_type(cls):
+        print(f"Storage type = {cls.storage_type}")
 
+    def get_info(self): #instance Method 
+        print(f"Latop has {self.RAM} & {self.Storage} {self.storage_type}")
+
+    @staticmethod
+    def cal_discount(price,discount):
+        final_price = price - (discount*price/100)
+        print(f"Discount Price = {final_price}")
+        
+l1 = laptop("16RAM","512GB")
+
+l1.get_info()
+
+laptop.get_storage_type()
+l1.cal_discount(40_000,11)
