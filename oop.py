@@ -29,5 +29,3 @@ print(stu3.name , stu3.cgpa)
 print(stu4.name , stu4.cgpa)
 
 
-
-#Do you recheck the repo
