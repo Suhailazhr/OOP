@@ -21,7 +21,9 @@ class student:
 stu1 = student("suhail" ,98)
 stu2 = student("Waseem" ,95)
 stu3 = student("Naseem" ,99)
+stu4 = student("Umar" ,89)
 
 print(stu1.name , stu1.cgpa)
 print(stu2.name , stu2.cgpa)
 print(stu3.name , stu3.cgpa)
+print(stu4.name , stu4.cgpa)
